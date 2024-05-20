@@ -27,4 +27,28 @@ const saludar = () => {
   console.log("Feliz Cumple Yuki!");
 };
 
-setTimeout(saludar, 2000);
+// setTimeout(saludar, 2000);
+
+// Set Interval
+
+const interButton = document.querySelector("#intervalo");
+interButton.addEventListener("click", () => {
+  clearInterval(intervalo);
+  console.log("Intervalo Detenido");
+});
+
+// let intervalo = setInterval(saludar, 1000);
+
+// console.log("Estamos esperando que el intervalo siga repitiendose");
+
+// Asincronismo
+
+console.log("Comenzando proceso sincronico");
+
+setTimeout(() => {
+  console.log("Proceso asincronico finalizado");
+}, 1000);
+
+console.log("Terminando proceso sincronico"); 
+
+

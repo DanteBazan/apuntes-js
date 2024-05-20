@@ -40,6 +40,57 @@
       👉 Permite ejecutar una funcion de forma recurrente cada cierto tiempo
       (especificado en milisegundos )
     </p>
+    <button id="intervalo">Detener Intervalo</button>
+    <h3>¿Que es un llamado asincronico?</h3>
+    <p>
+      👉 Imagina que solicitas datos de un sistema externo. El servidor puede
+      tardar un tiempo en procesar la solicitud mientras bloquea el hilo
+      principal y hace que la pagina web no responda.
+    </p>
+    <p>
+      👉 Ahi es donde entra en juego la asincronia que permite realizar largas
+      solicitudes de red sin bloquear el hilo principal.
+    </p>
+    <p>
+      👉 JavaScript fue diseñado para ser ejecutado en navegadores, trabajar con
+      peticiones sobre la red y procesar las interacciones del usuario, al
+      tiempo que mantiene una interfaz fluida.
+    </p>
+    <h3>ASYNC vs SYNC</h3>
+    <p>
+      👉 La declaracion de funcion async define una funcion asincrona, la cual
+      devuelve un objeto. Recibira una devolucion de llamada cuando se hayan
+      recibido los datos. Esto permite que el navegador continue funcionando con
+      normalidad mientras se procesa su solicitud.
+    </p>
+    <p>
+      👉 Sincronico significa estar en una secuencia, es decir, cada declaracion
+      del codigo se ejecutra una por una. Entonces, basicamente, una declaracion
+      tiene que esperar a que se ejecute la declaracion anterior.
+    </p>
+    <h3>¿Que es una promesa?</h3>
+    <p>
+      👉 Es un objeto que representa la terminacion o el fracaso de una
+      operacion asincrona.
+    </p>
+    <p>
+      👉 Escencialmente, una promesa es un objeto devuelto al cual se adjuntan
+      funciones callback, en lugar de pasar callbacks a una funcion.
+    </p>
+    <p>
+      👉 Las promesas trabajan principalmente con dos recursos, el resolve y el
+      reject.
+    </p>
+    <p>
+      👉 Para entender mejor esto, debemos pensar a las promesas con un if else:
+      Si la promesa se cumple (una peticion a una API fue exitosa) ejecuta el
+      resolve. De lo contrario, si la promesa falla por alguna razon, se
+      ejectura el reject.
+    </p>
+    <p>
+      👉 Segun se revuelva o no la promesa, se utilizara .then o .catch para
+      manejar su resolucion.
+    </p>
     <script src="./main.js"></script>
   </body>
 </html>
